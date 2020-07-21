@@ -12,7 +12,7 @@ profile:
     Campus of Beaulieu<br>
     35042 Rennes, France</p>
     <br>
-    <p>Intern@<a href="https://www.diverse-team.fr/" target="_blank">DiverSE Team</a></p>
+    <p>Intern, <a href="https://www.diverse-team.fr/" target="_blank">DiverSE Team</a></p>
 news: true
 social: true
 ---
