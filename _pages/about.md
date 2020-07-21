@@ -1,18 +1,19 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: <a href="#">Univ. Rennes 1, INRIA, IRISA</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: profil_pic.jpg
+  position: Intern
+  team: <a href="https://www.diverse-team.fr/" target="_blank">DiverSE</a>
+  affiliation: Univ. Rennes 1, IRISA, INRIA
   address: >
     <p>Building 12E, E202<br>
     Campus of Beaulieu<br>
     35042 Rennes, France</p>
-    <br>
-    <p>Intern, <a href="https://www.diverse-team.fr/" target="_blank">DiverSE Team</a></p>
 news: true
 social: true
 ---

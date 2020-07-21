@@ -19,17 +19,29 @@ layout: default
   </header>
 
   <article>
+    <div class="row d-sm-none">
+      <div class="col-4">
+        {% if page.profile.image %}
+          <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
+        {% endif %}
+      </div>
+      <div class="col">
+        <p>{{ page.profile.position }}, {{ page.profile.team }}<br>{{ page.profile.affiliation }}</p>
+        {{ page.profile.address }}
+      </div>
+    </div>
     <div class="row">
       <div class="col">
         {{ content }}
       </div>
         {% if page.profile %}
-        <div class="profile col-4 {% if page.profile.align == 'left' %}order-first{% endif %}">
+        <div class="profile d-none d-sm-block col-4 {% if page.profile.align == 'left' %}order-first{% endif %}">
           {% if page.profile.image %}
             <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
           {% endif %}
           {% if page.profile.address %}
             <div class="address">
+              <p>{{ page.profile.position }}, {{ page.profile.team }}<br>{{ page.profile.affiliation }}</p>
               {{ page.profile.address }}
             </div>
           {% endif %}

@@ -36,11 +36,7 @@ a, table.table a {
 
 .profile {
     .address {
-      font-family: monospace;
       font-size: 1.2rem;
-      p {
-        margin: 0;
-      }
     }
 }
 
@@ -79,6 +75,29 @@ a, table.table a {
       &:hover {
         color: $theme-color;
       }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 660px) {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+
+    .navbar-brand {
+      font-size: 1rem;
+      margin-right: 0;
+
+      .font-weight-bold {
+        font-weight: 200 !important;
+      }
+      &:after {
+        content: "|"
+      }
+    }
+    #navbarNav .nav-link {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }
@@ -269,6 +288,18 @@ footer.sticky-bottom {
       max-width: 100%;
       object-fit: cover;
     }
+  }
+}
+
+
+@media (max-width: 549px) {
+  .projects{
+    margin-left: calc(50% - 125px);
+  }
+}
+@media (min-width: 550px) and (max-width: 800px) {
+  .projects{
+    margin-left: calc(50% - 260px);
   }
 }
 
