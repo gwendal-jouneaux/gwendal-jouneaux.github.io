@@ -42,6 +42,8 @@ done
 # Exit if any subcommand fails
 set -e
 
+cd $(dirname $0)
+cd .. 
 git pull
 
 echo "Deploying..."
