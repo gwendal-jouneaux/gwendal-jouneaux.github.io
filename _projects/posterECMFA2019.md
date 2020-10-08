@@ -2,7 +2,7 @@
 layout: distill
 title: "First Poster"
 description: 'Poster for DiverSE and Sm@rt teams seminar that present our work on automatic generation of Truffle-based interpreters'
-date: 2019-12-19T00:00:00.000+02:00
+date: 2019-12-19T01:00:00.000+02:00
 img: /assets/img/poster-reduced.png
 importance: 0
 authors:

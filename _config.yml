@@ -3,11 +3,11 @@
 # -----------------------------------------------------------------------------
 
 title: Gwendal Jouneaux
-email: contact@gwendal-jouneaux.fr
+email: gwendal.jouneaux@irisa.fr #contact@gwendal-jouneaux.fr
 description: > # this means to ignore newlines until "url:"
   Hello ! Welcome to my home page. I will talk about my research, my projects and diverse topics that interest me.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 url:  # the base hostname & protocol for your site
@@ -39,11 +39,11 @@ github_username: gwendal-jouneaux # your GitHub user name
 twitter_username: GJouneaux # your Twitter handle
 linkedin_username: gwendal-jouneaux # your LinkedIn user name
 scholar_userid: 3c-_CiAAAAAJ # your Google Scholar ID
-orcid_id: # your ORCID ID
+orcid_id: 0000-0003-1158-9335 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
+research_gate_profile: Gwendal_Jouneaux # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
