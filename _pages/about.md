@@ -25,14 +25,14 @@ I am a PhD student in Software engineering at University of Rennes 1. I'm curren
 
 <div id="affiliation-img">
   <div class="center">
-    <img id="diverse" src="{{ 'diverse-small.svg' | prepend: '/assets/img/' | relative_url }}">
-    <img id="irisa"   src="{{ 'irisa.png'         | prepend: '/assets/img/' | relative_url }}">
-    <img id="inria"   src="{{ 'inria.png'         | prepend: '/assets/img/' | relative_url }}">
+    <a href="https://www.diverse-team.fr/"  target="_blank"><img id="diverse" src="{{ 'diverse-small.svg' | prepend: '/assets/img/' | relative_url }}"></a>
+    <a href="https://www.irisa.fr/"         target="_blank"><img id="irisa"   src="{{ 'irisa.png'         | prepend: '/assets/img/' | relative_url }}"></a>
+    <a href="https://www.inria.fr/"         target="_blank"><img id="inria"   src="{{ 'inria.png'         | prepend: '/assets/img/' | relative_url }}"></a>
     
   </div>
   <div class="center">
-    <img id="ur1"     src="{{ 'ur1.png'           | prepend: '/assets/img/' | relative_url }}">
-    <img id="esir"    src="{{ 'esir.png'          | prepend: '/assets/img/' | relative_url }}">
+    <a href="https://www.univ-rennes1.fr/"  target="_blank"><img id="ur1"     src="{{ 'ur1.png'           | prepend: '/assets/img/' | relative_url }}"></a>
+    <a href="https://esir.univ-rennes1.fr/" target="_blank"><img id="esir"    src="{{ 'esir.png'          | prepend: '/assets/img/' | relative_url }}"></a>
   </div>
 </div>
 

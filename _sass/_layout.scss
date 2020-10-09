@@ -1,146 +1,146 @@
 /******************************************************************************
- * Content
- ******************************************************************************/
+* Content
+******************************************************************************/
 
- body {
-   padding-bottom: 70px;
-   color: $text-color;
- }
+body {
+	padding-bottom: 70px;
+	color: $text-color;
+}
 
- body.fixed-top-nav {
-   // Add some padding for the nav-bar.
-   padding-top: 56px;
- }
+body.fixed-top-nav {
+	// Add some padding for the nav-bar.
+	padding-top: 56px;
+}
 
- body.sticky-bottom-footer {
-   // Remove padding below footer.
-   padding-bottom: 0;
- }
+body.sticky-bottom-footer {
+	// Remove padding below footer.
+	padding-bottom: 0;
+}
 
 .container {
-  max-width: $max-content-width;
+	max-width: $max-content-width;
 }
 
 a.navbar-brand.title {
-  &:hover {
-    color: $theme-color;
-  }
+	&:hover {
+		color: $theme-color;
+	}
 }
 
 // Profile
 .profile {
-  img {
-    width: 100%;
-  }
+	img {
+		width: 100%;
+	}
 }
 
 .profile-small {
-  .picture {
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .infos{
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+	.picture {
+		padding-top: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.infos{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
 
 .justify {
-  text-align: justify;
+	text-align: justify;
 }
 
 #affiliation-img {
-  text-align: center;
-
-  .center {
-    display: inline-block;
-  }
-  #diverse {
-    height: 40px;
-  }
-  #ur1 {
-    height: 65px;
-  }
-  #esir {
-    height: 40px;
-  }
-  #irisa {
-    height: 45px;
-  }
-  #inria {
-    height: 50px;
-  }
+	text-align: center;
+	
+	.center {
+		display: inline-block;
+	}
+	#diverse {
+		height: 40px;
+	}
+	#ur1 {
+		height: 65px;
+	}
+	#esir {
+		height: 40px;
+	}
+	#irisa {
+		height: 45px;
+	}
+	#inria {
+		height: 50px;
+	}
 }
 
 @media (max-width: 409px) {
-  .social{
-    .contact-icon {
-      font-size: 3rem !important;
-    }
-  } 
-  .profile-small {
-    .picture {
-      max-width: inherit;
-      flex: 0 0 100%;
-      -ms-flex: 0 0 100%;
-      padding-left: 25%;
-      padding-right: 25%;
-      padding-top: 0;
-      margin-bottom: 15px;
-
-      img {
-        border-radius: 50% !important;
-      }
-    }
-    .infos{
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-  #affiliation-img {
-    text-align: center;
-  
-    .center {
-      display: inline-block;
-    }
-    #diverse {
-      height: 35px;
-    }
-    #ur1 {
-      height: 60px;
-    }
-    #esir {
-      height: 35px;
-    }
-    #irisa {
-      height: 35px;
-    }
-    #inria {
-      height: 40px;
-    }
-  }
-
-  .header-bar {
-    h1 {
-      font-size: 4rem !important;
-    }
-  }
-
+	.social{
+		.contact-icon {
+			font-size: 3rem !important;
+		}
+	} 
+	.profile-small {
+		.picture {
+			max-width: inherit;
+			flex: 0 0 100%;
+			-ms-flex: 0 0 100%;
+			padding-left: 25%;
+			padding-right: 25%;
+			padding-top: 0;
+			margin-bottom: 15px;
+			
+			img {
+				border-radius: 50% !important;
+			}
+		}
+		.infos{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	#affiliation-img {
+		text-align: center;
+		
+		.center {
+			display: inline-block;
+		}
+		#diverse {
+			height: 35px;
+		}
+		#ur1 {
+			height: 60px;
+		}
+		#esir {
+			height: 35px;
+		}
+		#irisa {
+			height: 35px;
+		}
+		#inria {
+			height: 40px;
+		}
+	}
+	
+	.header-bar {
+		h1 {
+			font-size: 4rem !important;
+		}
+	}
+	
 }
 
 .news {
-  .news-small-date {
-    min-width: 61px;
-    vertical-align: middle;
-  }
-  .news-date {
-    min-width: 100px;
-    vertical-align: middle;
-  }
-  .inline-news {
-    vertical-align: middle;
-  }
+	.news-small-date {
+		min-width: 61px;
+		vertical-align: middle;
+	}
+	.news-date {
+		min-width: 100px;
+		vertical-align: middle;
+	}
+	.inline-news {
+		vertical-align: middle;
+	}
 }
 
 
@@ -148,8 +148,70 @@ a.navbar-brand.title {
 
 
 /******************************************************************************
- * Publications
- ******************************************************************************/
+* Publications
+******************************************************************************/
+div.publications {
+	&>div.row {
+		padding-right: 15px;
+		padding-left: 15px;
+
+		h2.year {
+			border-top: 1px solid lighten($grey-color, 20%);
+			color: lighten($grey-color, 20%);
+		}
+	}
+	ol.bibliography {
+		flex: 0 0 91.666667%;
+		max-width: 91.666667%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: 576px) {
+	div.publications {
+		&>div.row {
+			border-top: 1px solid lighten($grey-color, 20%);
+			padding-top: 1rem;
+
+			h2.year {
+				writing-mode:vertical-rl;
+				margin: 0;
+				text-align: left;
+				border: none;
+				padding: 0;
+				color: lighten($grey-color, 20%);
+			}
+			ol.bibliography li {
+				.abbr {
+					padding-right: 5px;
+					padding-left: 5px;
+					
+					abbr {
+						width: 100%;
+						padding-right: 0;
+						padding-left: 0;
+					}
+				}
+				.paper {
+					padding-right: 5px;
+					padding-left: 5px;
+
+					.links {
+						a {
+							font-weight: bold;
+							color: darken($theme-color, 10%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
 
 // TODO: redefine publications layout.
 
@@ -161,8 +223,8 @@ a.navbar-brand.title {
 // TODO: redefine projects layout.
 
 .distill {
-  d-byline .byline {
-    grid-template-columns: 2fr 2fr 1fr !important;
-  }
+	d-byline .byline {
+		grid-template-columns: 2fr 2fr 1fr !important;
+	}
 }
 
