@@ -22,4 +22,4 @@ deploy:
   provider: script
   script: bash ./bin/update -u
   on:
-    branch: master
+    branch: source
