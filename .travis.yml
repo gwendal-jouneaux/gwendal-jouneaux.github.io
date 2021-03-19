@@ -18,8 +18,20 @@ cache: bundler # caching bundler gem packages will speed up build
 notifications:
   email: false
 
+after_success: cp ./CNAME _site/
+
 deploy:
-  provider: script
-  script: bash ./bin/update -u
+  # Utiliser le processus de déploiement des pages Github
+  provider: pages
+  skip-cleanup: true
+  # Répertoire où se trouvent les fichiers générés
+  local_dir: _site
+  # Github security/auth token
+  github-token: $GH_TOKEN
+  # Conserve les anciens fichiers/constructions des déploiements précédents
+  keep-history: true
+  # La branche Git sur laquelle on souhaite déployer (master, gh-pages, foo...)
+  target_branch: master
   on:
+    # Quelle branche déclenchera le déploiement
     branch: source
