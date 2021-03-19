@@ -20,7 +20,7 @@ social: true
 
 # About me
 <div class="justify">
-I am a PhD student in Software engineering at University of Rennes 1. I'm currently working on Self-Adaptable Languages with my two supervisors <a href="https://people.irisa.fr/Benoit.Combemale/" target="_blank">Benoit Combemale</a> and <a href="https://olivier.barais.fr/" target="_blank">Olivier Barais</a>.
+I am a PhD student in Software engineering at University of Rennes 1. I'm currently working on Self-Adaptable Languages with <a href="https://people.irisa.fr/Benoit.Combemale/" target="_blank">Benoit Combemale</a>, <a href="https://olivier.barais.fr/" target="_blank">Olivier Barais</a> and <a href="http://www.ece.mcgill.ca/~gmussb1/" target="_blank">Gunter Mussbacher</a>.
 </div>
 
 <div id="affiliation-img">
@@ -38,12 +38,11 @@ I am a PhD student in Software engineering at University of Rennes 1. I'm curren
 
 
 ## Topics of interest
+ - Model-Driven Engineering (MDE)
  - Software Language Engineering (SLE)
  - Domain-Specific Languages (DSLs)
- - Interpreter Performance
- - Energy Consumption
- - Dynamic Adaptatives Systems (DAS)
- - Model-Driven Engineering (MDE)
+ - Software Languages extra-functional properties
  - Reproductible Benchmarking
+ - Dynamic Adaptatives Systems (DAS)
 
 Feel free to contact me if you have some questions.
