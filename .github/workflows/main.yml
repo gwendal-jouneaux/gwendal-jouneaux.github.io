@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - source
-      - migration-travis-to-actions
   schedule:
   - cron: "0 2 * * *"
 jobs:
