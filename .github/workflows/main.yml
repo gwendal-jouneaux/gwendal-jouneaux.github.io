@@ -6,25 +6,43 @@ on:
   schedule:
   - cron: "0 2 * * *"
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
-        
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - name: Setup the cache
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      
-      - name: Build 🔧 and Deploy 🚀
-        uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          jekyll_src: '_site'
-          keep_history: true
-          target_branch: 'master'
+    - name: Checkout code 🛎️
+      uses: actions/checkout@v2
+    - name: Setup Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+    - name: Enable bundler cache
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Install deps 🔧
+      run: |
+        gem install bundler
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+    - name: Setup deploy options 🔧
+      id: setup
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then # pull request
+          echo "::set-output name=SRC_BRANCH::${GITHUB_HEAD_REF}"
+          echo "::set-output name=NO_PUSH::--no-push"
+        elif [[ ${GITHUB_REF} = refs/heads/* ]]; then # branch, e.g. master, source etc
+          echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
+        fi
+        if [[ ${{ github.repository }} = *.github.io ]]; then # user/org repo
+          echo "::set-output name=DEPLOY_BRANCH::master"
+        else
+          echo "::set-output name=DEPLOY_BRANCH::gh-pages"
+        fi
+    - name: Deploy website 🚀
+      run:  bin/update --src ${{ steps.setup.outputs.SRC_BRANCH }} 
+                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
