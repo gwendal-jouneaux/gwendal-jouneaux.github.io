@@ -45,5 +45,5 @@ jobs:
           echo "::set-output name=DEPLOY_BRANCH::gh-pages"
         fi
     - name: Deploy website 🚀
-      run:  bin/deploy --src ${{ steps.setup.outputs.SRC_BRANCH }} 
+      run:  bin/update --src ${{ steps.setup.outputs.SRC_BRANCH }} 
                     --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
