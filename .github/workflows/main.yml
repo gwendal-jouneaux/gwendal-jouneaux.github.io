@@ -28,6 +28,9 @@ jobs:
       - name: content
         run : ls -la
 
+      - name: ci
+        run : ./bin/cibuild
+
       - name: Build 🔧 and Deploy 🚀
         uses: helaili/jekyll-action@v2
         with:
