@@ -23,6 +23,7 @@ I graduated a few months ago from the <a href="https://esir.univ-rennes1.fr/en">
 
 My Ph.D. is entitled **“Self-Adaptable Languages”** and is supervised by <a href="https://people.irisa.fr/Benoit.Combemale/" target="_blank">Benoit Combemale</a>, <a href="https://olivier.barais.fr/" target="_blank">Olivier Barais</a> and <a href="http://www.ece.mcgill.ca/~gmussb1/" target="_blank">Gunter Mussbacher</a>. In addition to SLE<d-footnote>Software Language Engineering</d-footnote>, MDE<d-footnote>Model-Driven Engineering</d-footnote>, and Self-Adaptive Systems, which are related to my Ph.D. subject, I’m also deeply interested in cross-cutting aspects of computer science like software performances and energy consumption.
 
+<<<<<<< HEAD
 ## So... What about this blog ?
 
 This blog is a place for me to talk informally about the subjects that I like (*i.e.* the topics mentionned above). There will be mainly three types of posts : Vulgarization, Technic and Thoughts.
@@ -32,6 +33,18 @@ This blog is a place for me to talk informally about the subjects that I like (*
 #### Technic : Code, Tools and Techniques
 
 #### Thoughts :
+=======
+In this blog, I will talk about the topics that interest me (see above) in different ways :
+
+#### 1 - Vulgarization
+First, vulgarization on those topics to allow non-specialist to learn more about those subject that I love.
+
+#### 2 - Code, Tools and Techniques
+
+#### 3 - Opinion and Thought
+
+#### 4 - Tools and Techniques
+>>>>>>> 8896314 (Init first blog post)
 
 
 
