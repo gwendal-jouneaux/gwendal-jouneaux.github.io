@@ -54,23 +54,29 @@ In the end, those posts form the "How to ..." section of this blog.
 
 ### Thoughts
 
-## Some informations about how this blog run
+## Some information about how this blog run
+
+### Distill
 
 
-https://distill.pub/guide/
+<div class="columns">
+  <p class="l-body side">
+  The posts of this blog are created using Distill<d-footnote><a href="https://distill.pub/guide/">https://distill.pub/guide/</a></d-footnote>, and is based on the Distill web framework<d-cite key="Distill_2020"></d-cite>.
+  Distill propose a set of new HTML tags allowing to focus on writing the content rather than the way it is displayed. 
+  These new tags are similar to common LaTeX commands such as cite from BiBTeX, footnote or code listings. 
+  Additionally, Distill provide CSS classes to have wider content (_e.g._ images, tables, code listings), to put content on the side (two columns), or put notes in the margins.
+  </p>
 
-## Usefull templates
+  <div class="l-body side">
+    <d-code block language="javascript">
+      var x = 25;
+      function(x) {
+        return x * x;
+      }
+    </d-code>
+  </div>
+</div>
 
-<d-cite key="DSL_Biblio_2000"></d-cite>
-
-Footnote<d-footnote>This will become a hoverable footnote.</d-footnote>
- 
-<d-code block language="javascript">
-  var x = 25;
-  function(x) {
-    return x * x;
-  }
-</d-code>
 
 Equation : $$ E = mc^2 $$.
 
@@ -87,5 +93,7 @@ Equation : $$ E = mc^2 $$.
 </div>
 
 <div class="l-gutter">
-  <p>Note dans la marge</p>
+  <p>Here I used most of the concepts just mentionned as example</p>
 </div>
+
+<d-appendix>
