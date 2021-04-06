@@ -1,0 +1,8 @@
+<script type="text/javascript">
+    function filter(tag){
+        let selectedPosts = document.querySelectorAll(".post-list li."+tag)
+        let selectedPostsArray = Array.from(selectedPosts);
+        let allPosts = document.querySelectorAll(".post-list li")
+        allPosts.forEach(x => x.hidden = !selectedPostsArray.includes(x))
+    }
+</script>

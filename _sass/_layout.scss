@@ -233,3 +233,14 @@ div.publications {
 		text-align: justify;
 	}
 }
+
+.abbr {
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	abbr {
+	  display: inline-block;
+	  background-color: $theme-color;
+	  padding-left: 1rem;
+	  padding-right: 1rem;
+	}
+  }

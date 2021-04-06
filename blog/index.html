@@ -22,13 +22,18 @@ pagination:
 
   <ul class="post-list">
     {% for post in paginator.posts %}
-      <li>
+      <li class="{{ post.tags | join: ' ' }}">
         <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
         <p>{{ post.description }}</p>
+        {% for tag in post.tags %}
+          <a class="abbr" href="#{{ tag }}" onclick="filter('{{ tag }}')"><abbr class="badge">{{ tag }}</abbr></a>&nbsp;
+        {% endfor %}
       </li>
     {% endfor %}
   </ul>
+
+  {% include sorting.html %}
 
   {% include pagination.html %}
 
