@@ -5,4 +5,9 @@
         let allPosts = document.querySelectorAll(".post-list li")
         allPosts.forEach(x => x.hidden = !selectedPostsArray.includes(x))
     }
+
+    window.onload = () => {
+        var tag = window.location.hash.substr(1);
+        filter(tag)
+    }
 </script>
