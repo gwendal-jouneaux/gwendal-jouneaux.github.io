@@ -197,10 +197,23 @@ footer.sticky-bottom {
   border-bottom: 1px solid $grey-color-light;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
   h1 {
     color: $theme-color;
-    font-size: 5rem;
+    font-size: 100%;
+  }
+  h2 {
+		font-size: 50%;
+    padding-bottom: 1rem;
+	}
+  h3{
+    font-size: 40%;
+    display: inline;
+  }
+  .tag-list{
+    display: inline;
+    font-size: 16px;
   }
 }
 
@@ -223,6 +236,23 @@ footer.sticky-bottom {
       text-decoration: none;
       &:hover {
         color: $theme-color;
+      }
+    }
+  }
+}
+
+.tag-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: black;
       }
     }
   }
