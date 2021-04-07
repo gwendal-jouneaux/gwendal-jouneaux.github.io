@@ -91,6 +91,13 @@
       <d-title>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
+        <div class="tags">
+          {% for tag in page.tags %}
+          <a class="abbr" href="{{ '/blog/' | relative_url }}#{{ tag }}">
+            <abbr class="badge">{{ tag }}</abbr>
+          </a>&nbsp;
+          {% endfor %}
+        </div>
       </d-title>
 
       <d-byline></d-byline>

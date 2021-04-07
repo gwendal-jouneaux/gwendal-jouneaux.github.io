@@ -223,11 +223,13 @@ div.publications {
 	d-byline .byline {
 		grid-template-columns: 2fr 2fr 1fr !important;
 	}
-}
 
-.distill {
 	d-article > p {
 		text-align: justify;
+	}
+
+	d-title > .tags {
+		grid-column: text;
 	}
 }
 
