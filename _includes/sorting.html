@@ -8,6 +8,8 @@
 
     window.onload = () => {
         var tag = window.location.hash.substr(1);
-        filter(tag)
+        if(tag){
+            filter(tag)
+        }
     }
 </script>

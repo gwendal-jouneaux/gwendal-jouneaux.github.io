@@ -22,6 +22,7 @@ pagination:
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
 
+    {% if alltags.size > 0 %}
     <h3>Tags : </h3>
     <ul class="tag-list">
       {% for tag in alltags %}
@@ -32,6 +33,7 @@ pagination:
         </li>
       {% endfor %}
     </ul>
+    {% endif %}
   </div>
 
   <ul class="post-list">
