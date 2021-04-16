@@ -2,6 +2,7 @@
 layout: distill
 title: On the content of this blog
 description: Some explanation about what I want to do with this blog and how it is build
+<<<<<<< HEAD
 date: 2021-03-30
 comments-issue: 2
 
@@ -9,6 +10,11 @@ tags:
   - Thoughts
   - Tools
 
+=======
+date: 2020-03-30
+comments-issue: 2
+
+>>>>>>> 15a40ed4229facd0c3321ae532818ab587adfb67
 authors:
   - name: Gwendal Jouneaux
     url: "https://www.gwendal-jouneaux.fr"
