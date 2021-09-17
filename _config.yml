@@ -107,6 +107,7 @@ exclude: [vendor]
 # Plug-ins
 plugins:
   - jekyll-email-protect
+  - jekyll-redirect-from
   - jekyll-paginate-v2
   - jekyll/scholar
   - jemoji
