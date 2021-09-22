@@ -11,7 +11,7 @@ profile:
   team: <a href="https://www.diverse-team.fr/" target="_blank">DiverSE</a>
   affiliation: Univ. Rennes 1, IRISA, INRIA
   address: >
-    <p>Building 12E, E210 Green<br>
+    <p>Building 12F, F334 Green<br>
     Campus of Beaulieu<br>
     35042 Rennes, France</p>
 news: true
@@ -43,6 +43,6 @@ I am a PhD student in Software engineering at University of Rennes 1. I'm curren
  - Domain-Specific Languages (DSLs)
  - Software Languages extra-functional properties
  - Reproductible Benchmarking
- - Dynamic Adaptatives Systems (DAS)
+ - Self-Adaptive Systems (SAS)
 
 Feel free to contact me if you have some questions.
