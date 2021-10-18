@@ -3,6 +3,7 @@
 
 @article{leduc2019automatic-dblp,
   abbr      = {{ECMFA'20}},
+  index = 1,
   author    = {Leduc, Manuel and 
                Jouneaux, Gwendal and 
                Degueule, Thomas and 
@@ -40,22 +41,68 @@
               we conclude that our approach yields substantial performance gains while remaining non-intrusive of EMF abstractions.}}
 }
 
-@inproceedings{jouneaux2021towards,
-  abbr={{Onward! 2021}},
-  title={{Towards Self-Adaptable Languages}},
-  author={Jouneaux, Gwendal and Barais, Olivier and Combemale, Benoit and Mussbacher, Gunter},
-  booktitle={{Onward! 2021-ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software}},
-  year={2021},
-  url={https://hal.inria.fr/hal-03318816v1},
-  abstract={{Over recent years, self-adaptation has become a concern for many software systems that have to operate in complex and 
-  changing environments. At the core of self-adaptation, there is a feedback loop and associated trade-off reasoning to decide on the 
-  best course of action. However, existing software languages do not abstract the development and execution of such feedback loops for 
-  self-adaptable systems. Developers have to fall back to ad-hoc solutions to implement self-adaptable systems, often with wide-ranging 
-  design implications (e.g., explicit MAPE-K loop). Furthermore, existing software languages do not capitalize on monitored usage data 
-  of a language and its modeling environment. This hinders the continuous and automatic evolution of a software language based on feedback 
-  loops from the modeling environment and runtime software system. To address the aforementioned issues, this paper introduces the concept 
-  of Self-Adaptable Language (SAL) to abstract the feedback loops at both system and language levels. We propose L-MODA (Language, Models, 
-  and Data) as a conceptual reference framework that characterizes the possible feedback loops abstracted into a SAL. To demonstrate SALs, 
-  we present emerging results on the abstraction of the system feedback loop into the language semantics. We report on the concept of 
-  Self-Adaptable Virtual Machines as an example of semantic adaptation in a language interpreter and present a roadmap for SALs.}}
+@inproceedings{10.1145/3486607.3486753,
+abbr={{Onward! 2021}},
+index = 1,
+month = Oct,
+author = {Jouneaux, Gwendal and Barais, Olivier and Combemale, Benoit and Mussbacher, Gunter},
+title = {Towards Self-Adaptable Languages},
+year = {2021},
+isbn = {9781450391108},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://hal.inria.fr/hal-03318816v1},
+doi = {10.1145/3486607.3486753},
+booktitle = {Proceedings of the 2021 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+pages = {97–113},
+numpages = {17},
+keywords = {self-adaptation, software language, L-MODA framework, trade-off analysis, feedback loop},
+location = {Chicago, IL, USA},
+series = {Onward! 2021},
+abstract = {Over recent years, self-adaptation has become a concern for many software systems
+that have to operate in complex and changing environments. At the core of self-adaptation,
+there is a feedback loop and associated trade-off reasoning to decide on the best
+course of action. However, existing software languages do not abstract the development
+and execution of such feedback loops for self-adaptable systems. Developers have to
+fall back to ad-hoc solutions to implement self-adaptable systems, often with wide-ranging
+design implications (e.g., explicit MAPE-K loop). Furthermore, existing software languages
+do not capitalize on monitored usage data of a language and its modeling environment.
+This hinders the continuous and automatic evolution of a software language based on
+feedback loops from the modeling environment and runtime software system. To address
+the aforementioned issues, this paper introduces the concept of Self-Adaptable Language
+(SAL) to abstract the feedback loops at both system and language levels. We propose
+L-MODA (Language, Models, and Data) as a conceptual reference framework that characterizes
+the possible feedback loops abstracted into a SAL. To demonstrate SALs, we present
+emerging results on the abstraction of the system feedback loop into the language
+semantics. We report on the concept of Self-Adaptable Virtual Machines as an example
+of semantic adaptation in a language interpreter and present a roadmap for SALs.}
+}
+
+
+@inproceedings{jouneaux2021SEALS, 
+    ABBR = {SLE 2021},
+    INDEX = 2,
+    TITLE = {{SEALS: A Framework for Building Self-Adaptive Virtual Machines}}, 
+    AUTHOR = {Jouneaux, Gwendal and Barais, Olivier and Combemale, Benoit and Mussbacher, Gunter}, 
+    URL = {https://hal.inria.fr/hal-03355253}, 
+    BOOKTITLE = {{Proceedings of the 14th ACM SIGPLAN International Conference on Software Language Engineering (SLE '21)}},
+    ADDRESS = {Chicago, United States}, 
+    YEAR = {2021}, 
+    MONTH = Oct, 
+    DOI = {10.1145/3486608.3486912},
+    ABSTRACT = {Over recent years, self-adaptation has become a major concern for software systems 
+    that evolve in changing environments. While expert developers may choose a manual implementation 
+    when self-adaptation is the primary concern, self-adaptation should be abstracted for non-expert 
+    developers or when it is a secondary concern. We present SEALS, a framework for building self-adaptive 
+    virtual machines for domain specific languages. This framework provides first-class entities for 
+    the language engineer to promote domain-specific feedback loops in the definition of the DSL 
+    operational semantics. In particular, the framework supports the definition of (i) the abstract 
+    syntax and the semantics of the language as well as the correctness envelope defining the acceptable 
+    semantics for a domain concept, (ii) the feedback loop and associated trade-off reasoning, and 
+    (iii) the adaptations and the predictive model of their impact on the trade-off. We use this 
+    framework to build three languages with self-adaptive virtual machines and discuss the relevance 
+    of the abstractions, effectiveness of correctness envelopes, and compare their code size and 
+    performance results to their manually implemented counterparts. We show that the framework provides 
+    suitable abstractions for the implementation of self-adaptive operational semantics while introducing 
+    little performance overhead compared to a manual implementation.}
 }
