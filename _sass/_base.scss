@@ -273,6 +273,21 @@ footer.sticky-bottom {
     border-bottom-color: $theme-color;
     text-decoration: none;
   }
+
+  .columns {
+    display: flex;
+    .side {
+      clear: both;
+      float: left;
+      width: 50%;
+    }
+    :first-child {
+      padding-right: 10px;
+    }
+    :last-child {
+      padding-left: 10px;
+    }
+  }
 }
 
 

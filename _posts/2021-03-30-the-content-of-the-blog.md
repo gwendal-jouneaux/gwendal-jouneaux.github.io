@@ -23,14 +23,14 @@ __Hello world!__ Welcome to my blog!
 
 First thing first, let me introduce myself. 
 My name is Gwendal Jouneaux and, at the time I write this post, I am a first-year Ph.D. Student in computer science at the University of Rennes (France)/Inria/IRISA. 
-I graduated a few months ago from the <a href="https://esir.univ-rennes1.fr/en">ESIR</a><d-footnote>The <a href="https://esir.univ-rennes1.fr/en">engineering school</a> department of the <a href="https://www.univ-rennes1.fr/">university of Rennes</a></d-footnote> and from the research in computer science master at the University of Rennes thanks to a double-diploma.
+I graduated a few months ago from the <a href="https://esir.univ-rennes1.fr/en">ESIR</a><d-footnote>The <a href="https://esir.univ-rennes1.fr/en">engineering school</a> departement of the <a href="https://www.univ-rennes1.fr/">university of Rennes</a></d-footnote> and from the research in computer science master at the University of Rennes thanks to a double-diploma.
 
 My Ph.D. is entitled **“Self-Adaptable Languages”** and is supervised by <a href="https://people.irisa.fr/Benoit.Combemale/" target="_blank">Benoit Combemale</a>, <a href="https://olivier.barais.fr/" target="_blank">Olivier Barais</a> and <a href="http://www.ece.mcgill.ca/~gmussb1/" target="_blank">Gunter Mussbacher</a>. 
 In addition to SLE<d-footnote>Software Language Engineering</d-footnote>, MDE<d-footnote>Model-Driven Engineering</d-footnote>, and Self-Adaptive Systems, which are related to my Ph.D. subject, I’m also deeply interested in cross-cutting aspects of computer science like software performances and energy consumption.
 
 ## So... What about this blog ?
 
-This blog is a place for me to talk informally about the subjects that I like (*i.e.* the topics mentioned above). 
+This blog is a place for me to talk informally about the subjects that I like (*i.e.* the topics mentionned above). 
 There will be mainly three types of posts : Technical, Vulgarization and Thoughts.
 
 ### Technical
