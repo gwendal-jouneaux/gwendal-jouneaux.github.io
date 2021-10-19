@@ -281,10 +281,10 @@ footer.sticky-bottom {
       float: left;
       width: 50%;
     }
-    :first-child {
+    > :first-child {
       padding-right: 10px;
     }
-    :last-child {
+    > :last-child {
       padding-left: 10px;
     }
   }
