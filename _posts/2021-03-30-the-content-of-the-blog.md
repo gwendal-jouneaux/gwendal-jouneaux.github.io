@@ -55,39 +55,36 @@ In the end, those posts form the "How to ..." section of this blog.
 
 <div class="columns">
   <p class="l-body side">
-  The posts of this blog are created using Distill<d-footnote><a href="https://distill.pub/guide/">https://distill.pub/guide/</a></d-footnote>, and is based on the Distill web framework<d-cite key="Distill_2020"></d-cite>.
-  Distill propose a set of new HTML tags allowing to focus on writing the content rather than the way it is displayed. 
-  These new tags are similar to common LaTeX commands such as cite from BiBTeX, footnote or code listings. 
-  Additionally, Distill provide CSS classes to have wider content (_e.g._ images, tables, code listings), to put content on the side (two columns), or put notes in the margins.
+    The posts of this blog are created using Distill<d-footnote><a href="https://distill.pub/guide/">https://distill.pub/guide/</a></d-footnote>, and is based on the Distill web framework<d-cite key="Distill_2020"></d-cite>.
+    Distill propose a set of new HTML tags allowing to focus on writing the content rather than the way it is displayed. 
+    These new tags are similar to common LaTeX commands such as cite from BiBTeX, footnote or code listings. 
   </p>
 
   <div class="l-body side">
+    <p>
+      Additionally, Distill provide CSS classes to have wider content (_e.g._ images, tables, code listings), to put content on the side (two columns), or put notes in the margins.
+    </p>
     <d-code block language="javascript">
-      var x = 25;
-      function(x) {
-        return x * x;
-      }
+      var f = x => x * x;
     </d-code>
   </div>
 </div>
 
-
-Equation : $$ E = mc^2 $$.
-
-<div class="l-body">
-  <p>taille du text</p>
-</div>
-
-<div class="l-page">
-  <p>Un peu plus large</p>
-</div>
-
-<div class="l-body-outset">
-  <p>entre body et page</p>
-</div>
-
 <div class="l-gutter">
-  <p>Here I used most of the concepts just mentionned as example</p>
+  <p>This margin note is here to highlight that I used most of the concepts just mentionned as example</p>
 </div>
+
+### MathJax
+
+Long story short, MathJax allow you to specify math using LaTeX format.
+
+Example : $$ E = mc$$^$$2 \rightarrow E = mc^2 $$.
+
+### Utterances
+
+Utterances<d-footnote><a href="https://utteranc.es/">https://utteranc.es/</a></d-footnote> is a comment widget based on Github issues.
+In the configuration of the blog post I have to specify the issue number to correctly pass the information to the Utterances client script.
+This allows people to comment the blog posts by creating new comments in the specified issue.
+Comments can be added through the issue on Github, but the best is still to use the provided interface on the blog post.
 
 <d-appendix>
