@@ -1,0 +1,28 @@
+---
+layout: post
+---
+
+{{ page.description }}<br/>
+
+{% if page.slides %}
+<a href="{{ page.slides | prepend: '/assets/pdf/Slides/' | relative_url }}" target="_blank">Slides</a>
+{% endif %}
+<span style="display:inline-block; width: 10px;"></span>
+{% if page.preprint %}
+<a href="{{ page.preprint}}" target="_blank">Preprint</a>
+{% endif %}
+
+{% if page.video %}
+<div class="auto-resizable-iframe">
+    <div>
+        <iframe
+        frameborder="0"
+        allowfullscreen=""
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        src="{{page.video}}">
+        </iframe>
+    </div>
+</div>
+{% endif %}
+
+{{ content }}
