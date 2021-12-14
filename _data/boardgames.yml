@@ -1,0 +1,580 @@
+games:
+  - name: Échecs
+    duration: 60
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 6
+    complexity: 3.69
+    storage: "Commode, Centre"
+    infos: "Classique"
+  
+  - name: Dames
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 6
+    complexity: 1.76
+    storage: "Commode, Centre"
+    infos: "Classique"
+  
+  - name: Backgammon
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 8
+    complexity: 2.02
+    storage: "Commode, Centre"
+    infos: "Classique"
+  
+  - name: Go
+    duration: 60
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 8
+    complexity: 3.94
+    storage: "Commode, Centre"
+    infos: "Classique"
+  
+  - name: Othello
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 8
+    complexity: 2.09
+    storage: "Commode, Centre"
+    infos: "Classique"
+  
+  - name: Mastermind
+    duration: 20
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 8
+    complexity: 1.8
+    storage: "Commode, Centre"
+    infos: "Classique"
+  
+  - name: Bataille Navale
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 8
+    complexity: 1.22
+    storage: ""
+    infos: "Classique"
+  
+  - name: Cluedo
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 5
+    age: 8
+    complexity: 1.66
+    storage: "Étagère, Bas, Fond"
+    infos: "Déduction"
+  
+  - name: Richesse du Monde
+    duration: 120
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 3
+    age: 10
+    complexity: 2.14
+    storage: "Étagère, Haut"
+    infos: "Économie, Négociation"
+  
+  - name: Monopoly
+    duration: 120
+    minPlayer: 2
+    maxPlayer: 8
+    bestPlayer: 4
+    age: 8
+    complexity: 1.64
+    storage: "Commode, Bas"
+    infos: "Économie, Négociation"
+  
+  - name: Bonne Paye
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 4
+    age: 8
+    complexity: 1.24
+    storage: "Commode, Bas"
+    infos: "Économie, Négociation"
+  
+  - name: Mille Bornes
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 4
+    age: 8
+    complexity: 1.25
+    storage: "Commode, Bas"
+    infos: "Course, Cartes"
+  
+  - name: Mikado
+    duration: 20
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 3
+    age: 4
+    complexity: 1.04
+    storage: "Commode, Bas"
+    infos: "Addresse"
+  
+  - name: Petits Chevaux
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 5
+    complexity: 1.2
+    storage: "Commode, Centre"
+    infos: "Course, Dés"
+  
+  - name: Tock
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 6
+    complexity: 1.67
+    storage: "Commode, Centre"
+    infos: "Course, Cartes"
+  
+  - name: Sur la terre des Dinosaures
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 3
+    age: 5
+    complexity: 1.0
+    storage: "Commode, Bas"
+    infos: "Additional informations"
+  
+  - name: "Destin : le jeu de la vie"
+    duration: 60
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 8
+    complexity: 1.17
+    storage: "Commode, Bas"
+    infos: "Additional informations"
+  
+  - name: "Harry Potter : le jeu du labyrinthe"
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 7
+    complexity: 2.0
+    storage: "Commode, Bas"
+    infos: "Additional informations"
+  
+  - name: "Dr Who : The card game"
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 10
+    complexity: 1.96
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Dark Tales
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 2
+    age: 10
+    complexity: 1.53
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Continuo
+    duration: 20
+    minPlayer: 1
+    maxPlayer: 5
+    bestPlayer: 3
+    age: 4
+    complexity: 1.41
+    storage: "Commode, Centre"
+    infos: "Additional informations"
+  
+  - name: Biolumia
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 5
+    bestPlayer: 3
+    age: 8
+    complexity: 1.0
+    storage: "Commode, Centre"
+    infos: "Additional informations"
+  
+  - name: "Escape tales : Low memory"
+    duration: 480
+    minPlayer: 1
+    maxPlayer: 4
+    bestPlayer: 2
+    age: 16
+    complexity: 2.31
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Question de merde et réponse brillantes
+    duration: 20
+    minPlayer: 2
+    maxPlayer: 99
+    bestPlayer: 6
+    age: 6
+    complexity: 1.1
+    storage: "Commode, Centre"
+    infos: "Additional informations"
+  
+  - name: Shit Happen
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 8
+    bestPlayer: 6
+    age: 18
+    complexity: 1.11
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Timeline
+    duration: 15
+    minPlayer: 2
+    maxPlayer: 8
+    bestPlayer: 4
+    age: 8
+    complexity: 1.07
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Contrario
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 12
+    bestPlayer: 8
+    age: 12
+    complexity: 1.12
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Dany
+    duration: 30
+    minPlayer: 3
+    maxPlayer: 8
+    bestPlayer: 7
+    age: 16
+    complexity: 1.27
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Taboo
+    duration: 20
+    minPlayer: 4
+    maxPlayer: 10
+    bestPlayer: 8
+    age: 10
+    complexity: 1.21
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Time's up Academy
+    duration: 45
+    minPlayer: 4
+    maxPlayer: 12
+    bestPlayer: 10
+    age: 12
+    complexity: 1.0
+    storage: "Étagère, Bas, Fond"
+    infos: "Additional informations"
+  
+  - name: Jungle Speed
+    duration: 10
+    minPlayer: 2
+    maxPlayer: 8
+    bestPlayer: 6
+    age: 6
+    complexity: 1.14
+    storage: "Étagère, Bas, Fond"
+    infos: "Additional informations"
+  
+  - name: Looney Quest
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 5
+    bestPlayer: 4
+    age: 8
+    complexity: 1.09
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Boss Monster
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 8
+    complexity: 1.84
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Elixir
+    duration: 60
+    minPlayer: 3
+    maxPlayer: 8
+    bestPlayer: 6
+    age: 10
+    complexity: 1.48
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Gang of Four
+    duration: 40
+    minPlayer: 3
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 8
+    complexity: 1.87
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Cortex
+    duration: 15
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 4
+    age: 8
+    complexity: 1.07
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Cerebral Academy
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 4
+    age: 8
+    complexity: 1.6
+    storage: ""
+    infos: "Additional informations"
+  
+  - name: "CuboQuizz : Enigmes"
+    duration: 0
+    minPlayer: 1
+    maxPlayer: 99
+    bestPlayer: 1
+    age: 8
+    complexity: 2.0
+    storage: "Commode, Centre"
+    infos: "Additional informations"
+  
+  - name: Metal Quizz
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 4
+    age: 12
+    complexity: 1.75
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Citadelle
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 8
+    bestPlayer: 5
+    age: 10
+    complexity: 2.05
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Time Bomb
+    duration: 20
+    minPlayer: 4
+    maxPlayer: 8
+    bestPlayer: 8
+    age: 12
+    complexity: 1.75
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Héros à louer
+    duration: 30
+    minPlayer: 3
+    maxPlayer: 5
+    bestPlayer: 4
+    age: 10
+    complexity: 1.48
+    storage: "Étagère, Bas, Fond"
+    infos: "Additional informations"
+  
+  - name: Saboteur
+    duration: 30
+    minPlayer: 3
+    maxPlayer: 10
+    bestPlayer: 8
+    age: 8
+    complexity: 1.33
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Atmosfear
+    duration: 60
+    minPlayer: 3
+    maxPlayer: 6
+    bestPlayer: 6
+    age: 12
+    complexity: 1.8
+    storage: ""
+    infos: "Additional informations"
+  
+  - name: Labyrinthe
+    duration: 20
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 8
+    complexity: 1.37
+    storage: "Commode, Bas"
+    infos: "Additional informations"
+  
+  - name: Living Forest
+    duration: 40
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 8
+    complexity: 2.08
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+
+  - name: Abyss
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 12
+    complexity: 2.33
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+
+  - name: Terraforming Mars
+    duration: 120
+    minPlayer: 1
+    maxPlayer: 5
+    bestPlayer: 3
+    age: 12
+    complexity: 3.24
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Donjon et Dragon (Boite Rouge)
+    duration: 90
+    minPlayer: 2
+    maxPlayer: 99
+    bestPlayer: 2
+    age: 10
+    complexity: 2.24
+    storage: "Commode, Haut"
+    infos: "Additional informations"
+
+  - name: Hero Quest
+    duration: 90
+    minPlayer: 2
+    maxPlayer: 5
+    bestPlayer: 5
+    age: 10
+    complexity: 2.19
+    storage: "Commode, Haut"
+    infos: "Additional informations"
+  
+  - name: Space Crusade
+    duration: 120
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 12
+    complexity: 2.29
+    storage: "Commode, Haut"
+    infos: "Additional informations"
+  
+  - name: The Crew
+    duration: 20
+    minPlayer: 2
+    maxPlayer: 5
+    bestPlayer: 4
+    age: 10
+    complexity: 1.99
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: The Mind Extreme
+    duration: 20
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 4
+    age: 8
+    complexity: 1.29
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+
+  - name: Recto Verso
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 6
+    bestPlayer: 4
+    age: 8
+    complexity: 1.37
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+  
+  - name: Stratego
+    duration: 45
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 8
+    complexity: 1.85
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+  
+  - name: Champs d'honneur
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 2
+    age: 14
+    complexity: 2.31
+    storage: "Étagère, Haut"
+    infos: "Additional informations"
+
+  - name: Shards of infinity
+    duration: 30
+    minPlayer: 2
+    maxPlayer: 4
+    bestPlayer: 2
+    age: 10
+    complexity: 2.02
+    storage: "Étagère, Bas"
+    infos: "Additional informations"
+
+  - name: Mr.Jack Pocket
+    duration: 15
+    minPlayer: 2
+    maxPlayer: 2
+    bestPlayer: 2
+    age: 14
+    complexity: 1.83
+    storage: "Étagère, Bas"
+    infos: "Additional informations"

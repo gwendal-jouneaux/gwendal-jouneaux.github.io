@@ -82,6 +82,9 @@ collections:
   talks:
     output: true
     permalink: /talks/:path/
+  perso:
+    output: true
+    permalink: /perso/:path/
 
 news_limit: 5
 
