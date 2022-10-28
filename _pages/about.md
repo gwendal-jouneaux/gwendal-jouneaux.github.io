@@ -21,6 +21,8 @@ social: true
 # About me
 <div class="justify">
 I am a PhD student in Software engineering at University of Rennes 1. I'm currently working on Self-Adaptable Languages with <a href="https://people.irisa.fr/Benoit.Combemale/" target="_blank">Benoit Combemale</a>, <a href="https://olivier.barais.fr/" target="_blank">Olivier Barais</a> and <a href="http://www.ece.mcgill.ca/~gmussb1/" target="_blank">Gunter Mussbacher</a>.
+
+Member of the <a href="http://gemoc.org/ale/team.html" target="_blank">ALE</a> Associate team
 </div>
 
 <div id="affiliation-img">
