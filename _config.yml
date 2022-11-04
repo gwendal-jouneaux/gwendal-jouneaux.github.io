@@ -86,7 +86,7 @@ collections:
     output: true
     permalink: /perso/:path/
 
-news_limit: 5
+news_limit: 2
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
