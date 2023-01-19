@@ -159,5 +159,5 @@ for game in games:
 
 '''
 
-with open("../_data/bgg.yml", "w") as f:
+with open("./_data/bgg.yml", "w") as f:
 	f.write(yml)
