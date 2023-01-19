@@ -1,6 +1,6 @@
 import requests
 import time
-import pandas as pd
+#import pandas as pd
 import xml.etree.ElementTree as ET
 
 
