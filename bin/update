@@ -61,6 +61,9 @@ then
 fi
 git checkout -b $DEPLOY_BRANCH
 
+# Run custom scripts
+python bgg.py
+
 # Build site
 bundle exec jekyll build
 
