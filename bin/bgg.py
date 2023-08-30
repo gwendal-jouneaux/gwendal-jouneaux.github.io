@@ -180,6 +180,8 @@ with open("./_data/bgg.yml", "w") as f:
 # Owned games
 games = ET.parse('wish.xml').getroot()
 
+priorityList = ["This should never appear", "Un MUST","J'adorerai","J'aimerai bien","J'y réfléchi","Jamais, s'il-vous plaît"]
+
 yml = "games:\n"
 
 for game in games:
@@ -189,12 +191,13 @@ for game in games:
 	image = game.find('image').text
 	url = f"https://boardgamegeek.com/boardgame/{id}"
 	priority = game.find('status').get("wishlistpriority")
+	comment = priority + " - " + priorityList[int(priority)]
 
 	yml = yml + f'''  - name: "{name}"
     thumbnail: "{thumbnail}"
     image: "{image}"
     url: "{url}"
-    priority: {priority}
+    priority: "{comment}"
 '''
 
 with open("./_data/wish.yml", "w") as f:

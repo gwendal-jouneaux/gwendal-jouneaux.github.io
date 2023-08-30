@@ -118,7 +118,7 @@ description: Liste des jeux de société que je souhaite avoir
 30. Rescue Polar Bears
 -->
 
-<div class="tg-wrap" style="width:95%; position:absolute; left:2.5%; padding-bottom: 50px;"><table id="tg-s8N2c" class="tg">
+<div class="tg-wrap" style="padding-bottom: 50px;"><table id="tg-s8N2c" class="tg">
 <thead>
   <tr>
     <th class="tg-1sny"></th>
