@@ -66,11 +66,23 @@ while not status == 200:
 with open("bgg.xml", "w") as f:
 	f.write(response.text)
 
-games = ET.parse('bgg.xml').getroot()
-
-
 # Don't save the XML (python3 bgg.py  2.54s user 0.06s system 12% cpu 20.698 total)
 #games = ET.fromstring(response.text)
+
+status = 202
+response = None
+while not status == 200:
+	time.sleep(1)
+	response = requests.get('https://api.geekdo.com/xmlapi/collection/Gwandalff?wishlist=1')
+	status = response.status_code
+
+# Save the XML    (python3 bgg.py  2.59s user 0.09s system 13% cpu 20.082 total)
+with open("wish.xml", "w") as f:
+	f.write(response.text)
+
+
+# Owned games
+games = ET.parse('bgg.xml').getroot()
 
 
 yml = "games:\n"
@@ -160,4 +172,30 @@ for game in games:
 '''
 
 with open("./_data/bgg.yml", "w") as f:
+	f.write(yml)
+
+
+
+# Wishlist games
+# Owned games
+games = ET.parse('wish.xml').getroot()
+
+yml = "games:\n"
+
+for game in games:
+	id = game.get('objectid')
+	name = game.find('name').text
+	thumbnail = game.find('thumbnail').text
+	image = game.find('image').text
+	url = f"https://boardgamegeek.com/boardgame/{id}"
+	priority = game.find('status').wishlistpriority
+
+	yml = yml + f'''  - name: "{name}"
+    thumbnail: "{thumbnail}"
+    image: "{image}"
+    url: "{url}"
+    priority: {priority}
+'''
+
+with open("./_data/wish.yml", "w") as f:
 	f.write(yml)

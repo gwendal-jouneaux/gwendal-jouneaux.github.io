@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /perso/jeux
-title: Jeux de société
-description: Liste des jeux de société que je possède
+permalink: /perso/wishlist
+title: Wishlist jeux de société
+description: Liste des jeux de société que je souhaite avoir
 ---
 
 <style type="text/css">
@@ -123,31 +123,15 @@ description: Liste des jeux de société que je possède
   <tr>
     <th class="tg-1sny"></th>
     <th class="tg-1sny">Nom</th>
-    <th class="tg-1sny">Durée</th>
-    <th class="tg-1sny">Min <i class="fa fa-user"></i></th>
-    <th class="tg-1sny">Max <i class="fa fa-user"></i></th>
-    <th class="tg-1sny">Reco <i class="fa fa-user"></i></th>
-    <th class="tg-1sny">Ideal <i class="fa fa-user"></i></th>
-    <th class="tg-1sny">Age</th>
-    <th class="tg-1sny">Complexité</th>
-    <th class="tg-1sny">Note</th>
-    <th class="tg-1sny">Traduisible</th>
+    <th class="tg-1sny">Priorité</th>
   </tr>
 </thead>
 <tbody>
-  {% for game in site.data.bgg.games %}
+  {% for game in site.data.wish.games %}
     <tr>
       <td class="tg-73oq"><a href="{{ game.url }}"><img src="{{ game.thumbnail }}"></a></td>
       <td class="tg-73oq">{{ game.name }}</td>
-      <td class="tg-73oq">{{ game.duration.average }} ({{ game.duration.min }} - {{ game.duration.max }})</td>
-      <td class="tg-73oq">{{ game.players.min }}</td>
-      <td class="tg-73oq">{{ game.players.max }}</td>
-      <td class="tg-73oq">{{ game.players.recommended }}</td>
-      <td class="tg-73oq">{{ game.players.best }}</td>
-      <td class="tg-73oq">{{ game.age }}</td>
-      <td class="tg-73oq">{{ game.complexity }}</td>
-      <td class="tg-73oq">{{ game.rating }}</td>
-      <td class="tg-73oq">{{ game.langdep }}</td>
+      <td class="tg-73oq">{{ game.priority }}</td>
     </tr>
   {% endfor %}
 </tbody>
