@@ -188,7 +188,7 @@ for game in games:
 	thumbnail = game.find('thumbnail').text
 	image = game.find('image').text
 	url = f"https://boardgamegeek.com/boardgame/{id}"
-	priority = game.find('status').wishlistpriority
+	priority = game.find('status').get("wishlistpriority")
 
 	yml = yml + f'''  - name: "{name}"
     thumbnail: "{thumbnail}"
