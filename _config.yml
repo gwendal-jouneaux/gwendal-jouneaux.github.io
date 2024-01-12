@@ -55,7 +55,7 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Gwendal Jouneaux  # your blog must have a name for it to show up in the nav bar
+blog_name:  # your blog must have a name for it to show up in the nav bar
 blog_description: Projects and thoughts of a PhD student
 permalink: /blog/:year/:title/
 

@@ -2,7 +2,7 @@
 layout: page
 title: Education
 permalink: /education/
-nav: true
+#nav: true
 ---
 
 ## Master 2 SIF - Research master in computer science at ISTIC, Rennes

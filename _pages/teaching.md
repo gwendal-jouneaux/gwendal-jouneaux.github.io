@@ -12,6 +12,17 @@ nav: true
 
 During my PhD I was teaching assistant at the University of Rennes 1, especially in the engineering school (ESIR).
 
+## 2023-2024
+
+- ASE (Advanced Software Engineering) for **Master 2**, *Software Engineering* path
+- GEN (Software Engineering) for **Bachelor 2**, *Computer Science* path
+- BMO (Object-Oriented Modeling) for **Bachelor 3**, *Computer Science* path
+- DD (Distributed Database) for **Master 1**, *Software Engineering* work-linked path
+- WE (Web Engineering) for **Master 1**, *Software Engineering* work-linked path
+- IDM (Model-Driven Engineering) for **Master 2**, *Software Engineering* work-linked path
+
+*Note : In the ASE Course, we focus on domain modeling and implementation of DSLs*
+
 ## 2022-2023
 
 - ASE (Advanced Software Engineering) for **Master 2**, *Software Engineering* path
