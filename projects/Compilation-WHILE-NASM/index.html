@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Gwendal Jouneaux</title>
+<title>Gwendal Jouneaux | DSL Compiler</title>
 <meta name="description" content="Hello ! Welcome to my home page. I will talk about my research, my projects and diverse topics that interest me.
 ">
 
@@ -23,12 +22,102 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/Compilation-WHILE-NASM/">
 
 <!-- Open Graph -->
 
 
+    <meta property="article:published" itemprop="datePublished" content="2019-01-26T22:00:00+00:00">
+  
+    
+        <meta property="article:author" content="JOUNEAUX Gwendal">
+    
+        <meta property="article:author" content="SCHNEIDER Timothée">
+    
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="DSL Compiler">
+    <meta property="og:description" content="The goal of this project was to create a compiler for the WHILE language. As a challenge, we choosed to compile to an assembly language.">
+    <meta property="og:url" content="/projects/Compilation-WHILE-NASM/">
+    
+    <meta property="og:image" content="/assets/img/diverse-img.png">
+    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Blog - Gwendal Jouneaux">
+  
+    <!--  https://dev.twitter.com/cards/types/summary -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@GJouneaux">
+    <meta name="twitter:title" content="DSL Compiler">
+    <meta name="twitter:description" content="The goal of this project was to create a compiler for the WHILE language. As a challenge, we choosed to compile to an assembly language.">
+    <meta name="twitter:url" content="/projects/Compilation-WHILE-NASM/">
+    
+    <meta property="twitter:image" content="/assets/img/diverse-img.png">
+    
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
   </head>
+
+  <d-front-matter>
+    <script type="text/json">{
+      "title": "DSL Compiler",
+      "description": "The goal of this project was to create a compiler for the WHILE language. As a challenge, we choosed to compile to an assembly language.",
+      "publishedDate": "2019-01-26T22:00:00+00:00",
+      "authors": [
+        
+        {
+          "author": "JOUNEAUX Gwendal",
+          "authorURL": "https://www.gwendal-jouneaux.fr",
+          "affiliations": [
+            {
+              "name": "ESIR, Univ. Rennes 1",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "SCHNEIDER Timothée",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "ESIR, Univ. Rennes 1",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
 
   <body class="fixed-top-nav ">
 
@@ -138,49 +227,53 @@
 
     <!-- Content -->
 
-    <div class="container mt-3">
-      
-  
+    <div class="post distill">
 
+      <d-title>
+        <h1>DSL Compiler</h1>
+        <p>The goal of this project was to create a compiler for the WHILE language. As a challenge, we choosed to compile to an assembly language.</p>
+        <div class="tags">
+          
+        </div>
+      </d-title>
 
+      <d-byline></d-byline>
 
+      <d-article>
+        <p><span class="align-left"><i class="fa fa-clock"></i> 05/11/2018 - 27/01/2019</span> 
+<span class="align-right"><i class="fa fa-cogs"></i> xText, xTend and NASM<br /></span>
+<span class="cf"></span>
+<span class="align-left"><i class="fa fa-angle-right"></i> Project of COMP course by Olivier RIDOUX</span>
+<span class="cf full"></span></p>
 
+<p>The first part of this project was to create a pretty-printer for the WHILE language. Since a pretty-printer is not more than a WHILE-to-WHILE compiler, this part of the project let us understand the basic process of compiling and also let us the time to choose the assembly language that will be our target for this project.</p>
 
+<p>Since we worked on the TASM Assembler we thought about using this one, but it was only for 16-bits architectures and we wanted to be able tu run the program directly on our computer. We searched for an equivalent assembly language and we found the NASM Assembler. This assembly language use, as well as TASM, the intel syntax and can be used to write programs for 32 and 64-bits architechtures.</p>
 
+<p>In the second part of the project, we had to create a first compiler that can compile a subset of the WHILE language. In fact, we knew that the program would contain only one function and no multiple variables assignment. It was in this part that the main issues were raised.</p>
 
-<div class="post">
+<ul>
+  <li>The memory representation of the datatype. <br /> Hopefully, the language was created to contain only one datatype, a binary tree. Since there is no datatype in NASM Assembler, we had to create our own convention of the data representation of a node</li>
+  <li>TODO : The end of the description</li>
+</ul>
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>Projects and thoughts of a PhD student</h2>
+      </d-article>
 
-    
-  </div>
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
-  <ul class="post-list">
-    
-  </ul>
+    <!-- Comments -->
 
-  <script type="text/javascript">
-    function filter(tag){
-        let selectedPosts = document.querySelectorAll(".post-list li."+tag)
-        let selectedPostsArray = Array.from(selectedPosts);
-        let allPosts = document.querySelectorAll(".post-list li")
-        allPosts.forEach(x => x.hidden = !selectedPostsArray.includes(x))
-    }
-
-    window.onload = () => {
-        var tag = window.location.hash.substr(1);
-        if(tag){
-            filter(tag)
-        }
-    }
+    <script src="https://utteranc.es/client.js"
+        repo="gwendal-jouneaux/gwendal-jouneaux.github.io"
+        issue-number=""
+        label="blog-comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
-
-  
-
-
-</div>
 
     </div>
 
@@ -240,5 +333,8 @@
 
 
 
+
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
 
 </html>
