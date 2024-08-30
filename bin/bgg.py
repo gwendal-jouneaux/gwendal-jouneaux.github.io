@@ -145,7 +145,9 @@ for game in games:
 		if num > maxVote:
 			maxVote = num
 			levelIndex = int(level.get('level'))
-	languageDependence = languageDependenceLevels[levelIndex]
+	languageDependence = "Unknown"
+	if levelIndex > 0 and levelIndex < len(languageDependenceLevels):
+		languageDependence = languageDependenceLevels[levelIndex]
 
 		
 	weight = bg.find('./statistics/ratings/averageweight').text
