@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Gwendal Jouneaux</title>
+<title>Gwendal Jouneaux | Page personelles</title>
 <meta name="description" content="Hello ! Welcome to my home page. I will talk about my research, my projects and diverse topics that interest me.
 ">
 
@@ -23,7 +23,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/perso/">
 
 <!-- Open Graph -->
 
@@ -66,6 +66,8 @@
           </li>
           
           <!-- Other pages -->
+          
+          
           
           
           
@@ -155,46 +157,30 @@
     <!-- Content -->
 
     <div class="container mt-3">
-      
-  
+      <div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">Page personelles</h1>
+    <p class="post-description">Liste des pages personelles (not for work)</p>
+  </header>
 
-
-
-
-
-
-<div class="post">
-
-  <div class="header-bar">
-    <h1></h1>
-    <h2>Projects and thoughts of a PhD student</h2>
-
+  <article>
     
-  </div>
+<div class="row">
+    <div class="col-sm-12">
+        <a href="/perso/jeux">Jeux de société</a>
+        <p>Liste des jeux de société que je possède</p>
+    </div>
+</div>
 
-  <ul class="post-list">
-    
-  </ul>
+<div class="row">
+    <div class="col-sm-12">
+        <a href="/perso/wishlist">Wishlist jeux de société</a>
+        <p>Liste des jeux de société que je souhaite avoir</p>
+    </div>
+</div>
 
-  <script type="text/javascript">
-    function filter(tag){
-        let selectedPosts = document.querySelectorAll(".post-list li."+tag)
-        let selectedPostsArray = Array.from(selectedPosts);
-        let allPosts = document.querySelectorAll(".post-list li")
-        allPosts.forEach(x => x.hidden = !selectedPostsArray.includes(x))
-    }
-
-    window.onload = () => {
-        var tag = window.location.hash.substr(1);
-        if(tag){
-            filter(tag)
-        }
-    }
-</script>
-
-  
-
+  </article>
 
 </div>
 
