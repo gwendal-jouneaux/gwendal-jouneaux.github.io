@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Gwendal Jouneaux</title>
+<title>Gwendal Jouneaux | Game AI</title>
 <meta name="description" content="Hello ! Welcome to my home page. I will talk about my research, my projects and diverse topics that interest me.
 ">
 
@@ -23,12 +22,115 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/AI-lines-of-action/">
 
 <!-- Open Graph -->
 
 
+    <meta property="article:published" itemprop="datePublished" content="2019-05-23T22:00:00+00:00">
+  
+    
+        <meta property="article:author" content="JOUNEAUX Gwendal">
+    
+        <meta property="article:author" content="SCHNEIDER Timothée">
+    
+        <meta property="article:author" content="BRETON Yoann">
+    
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Game AI">
+    <meta property="og:description" content="The goal of this project was to create a web-based Lines of Action game and create some Artificial Intelligences for the game.">
+    <meta property="og:url" content="/projects/AI-lines-of-action/">
+    
+    <meta property="og:image" content="/assets/img/diverse-img.png">
+    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Blog - Gwendal Jouneaux">
+  
+    <!--  https://dev.twitter.com/cards/types/summary -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@GJouneaux">
+    <meta name="twitter:title" content="Game AI">
+    <meta name="twitter:description" content="The goal of this project was to create a web-based Lines of Action game and create some Artificial Intelligences for the game.">
+    <meta name="twitter:url" content="/projects/AI-lines-of-action/">
+    
+    <meta property="twitter:image" content="/assets/img/diverse-img.png">
+    
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
   </head>
+
+  <d-front-matter>
+    <script type="text/json">{
+      "title": "Game AI",
+      "description": "The goal of this project was to create a web-based Lines of Action game and create some Artificial Intelligences for the game.",
+      "publishedDate": "2019-05-23T22:00:00+00:00",
+      "authors": [
+        
+        {
+          "author": "JOUNEAUX Gwendal",
+          "authorURL": "https://www.gwendal-jouneaux.fr",
+          "affiliations": [
+            {
+              "name": "ESIR, Univ. Rennes 1",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "SCHNEIDER Timothée",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "ESIR, Univ. Rennes 1",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "BRETON Yoann",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "ESIR, Univ. Rennes 1",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
 
   <body class="fixed-top-nav ">
 
@@ -154,49 +256,48 @@
 
     <!-- Content -->
 
-    <div class="container mt-3">
-      
-  
+    <div class="post distill">
 
+      <d-title>
+        <h1>Game AI</h1>
+        <p>The goal of this project was to create a web-based Lines of Action game and create some Artificial Intelligences for the game.</p>
+        <div class="tags">
+          
+        </div>
+      </d-title>
 
+      <d-byline></d-byline>
 
+      <d-article>
+        <p><span class="align-left"><i class="fa fa-clock"></i> 07/05/2019 - 24/05/2019</span> 
+<span class="align-right"><i class="fa fa-cogs"></i> Angular, TypeScipt <br /></span>
+<span class="cf"></span>
+<span class="align-left"><i class="fa fa-angle-right"></i> Project of the AI course by Zoltan MIKLOS</span>
+<span class="cf full"></span></p>
 
+<p>We choosed to not use back-end computations to be able to publish the game in a Github Page and let everyone have fun with this project. We used Angular to create this project because we didn’t know how to create an Angular application and we wanted to learn this new technology.</p>
 
+<p>For the Artificial Intelligences, we have started by creating a basic AI which play randomly but always follow the rules of the game. So we begin to create the game flow and the function that calculate the valid moves of a given pawn. After that, create the random AI was really easy, we just have to pick randomly one of the AI’s pawn and play randomly one of its valid moves.</p>
 
+<p>After that we created two other AI that are more “Clever” than the random one. This two AI used the same algorithm, a Min-Max algorithm. The main issue is that there is millions of nodes in a Min-Max tree of the entire game. So, we used some heuristics to give an “Advantage” value for the possibles boards and process the Min-Max tree only on a selected depth. The difference between the two level of “Clever” AI is only the heuristics we selected for the “Advantage” calculation.</p>
 
-<div class="post">
+      </d-article>
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>Projects and thoughts of a PhD student</h2>
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
-    
-  </div>
+    <!-- Comments -->
 
-  <ul class="post-list">
-    
-  </ul>
-
-  <script type="text/javascript">
-    function filter(tag){
-        let selectedPosts = document.querySelectorAll(".post-list li."+tag)
-        let selectedPostsArray = Array.from(selectedPosts);
-        let allPosts = document.querySelectorAll(".post-list li")
-        allPosts.forEach(x => x.hidden = !selectedPostsArray.includes(x))
-    }
-
-    window.onload = () => {
-        var tag = window.location.hash.substr(1);
-        if(tag){
-            filter(tag)
-        }
-    }
+    <script src="https://utteranc.es/client.js"
+        repo="gwendal-jouneaux/gwendal-jouneaux.github.io"
+        issue-number=""
+        label="blog-comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
-
-  
-
-
-</div>
 
     </div>
 
@@ -256,5 +357,8 @@
 
 
 
+
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
 
 </html>
