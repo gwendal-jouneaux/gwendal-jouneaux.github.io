@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: Gwendal Jouneaux
-email: gwendal.jouneaux@irisa.fr #contact@gwendal-jouneaux.fr
+email: gwendal.jouneaux@list.lu #contact@gwendal-jouneaux.fr
 description: > # this means to ignore newlines until "url:"
   Hello ! Welcome to my home page. I will talk about my research, my projects and diverse topics that interest me.
 footer_text: >
@@ -47,7 +47,7 @@ research_gate_profile: Gwendal_Jouneaux # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  Feel free to contact me by mail or twitter
+  Feel free to contact me by mail or LinkedIn
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 

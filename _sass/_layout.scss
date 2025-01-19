@@ -71,6 +71,15 @@ a.navbar-brand.title {
 	#inria {
 		height: 50px;
 	}
+	#LIST {
+		height: 80px;
+	}
+	#BLC {
+		height: 50px;
+	}
+	#BAF {
+		height: 50px;
+	}
 }
 
 @media (max-width: 409px) {
@@ -118,6 +127,15 @@ a.navbar-brand.title {
 		}
 		#inria {
 			height: 40px;
+		}
+		#LIST {
+			height: 75px;
+		}
+		#BLC {
+			height: 45px;
+		}
+		#BAF {
+			height: 45px;
 		}
 	}	
 }
