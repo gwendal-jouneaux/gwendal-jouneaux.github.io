@@ -15,6 +15,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.7.0'
+        bundler: '2.4.21'
     - name: Enable bundler cache
       uses: actions/cache@v2
       with:
