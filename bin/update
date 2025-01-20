@@ -62,7 +62,7 @@ fi
 git checkout -b $DEPLOY_BRANCH
 
 # Run custom scripts
-python bin/bgg.py
+#python bin/bgg.py
 
 # Export JEKYLL_ENV=production
 export JEKYLL_ENV=production
