@@ -1,6 +1,11 @@
-Combemale:
+"combemale":
+  - firstname: ["Benoit", "B."]
     url: https://combemale.fr
-Barais:
+
+"barais":
+  - firstname: ["Olivier", "O."]
     url: https://olivier.barais.fr
-Mussbacher:
-    url: http://www.ece.mcgill.ca/~gmussb1/
+
+"mussbacher":
+  - firstname: ["Gunter", "G."]
+    url:  http://www.ece.mcgill.ca/~gmussb1/

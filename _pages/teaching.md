@@ -4,10 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: List of courses taught and some extra materials.
 nav: true
----
-
-
-
+nav_order: 4
 ---
 
 During my PhD I was teaching assistant at the University of Rennes 1, especially in the engineering school (ESIR).

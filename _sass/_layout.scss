@@ -1,49 +1,41 @@
 /******************************************************************************
-* Content
-******************************************************************************/
+ * Content
+ ******************************************************************************/
 
 body {
-	padding-bottom: 70px;
-	color: $text-color;
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px;
+  }
 }
 
 body.fixed-top-nav {
-	// Add some padding for the nav-bar.
-	padding-top: 56px;
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
 }
 
 body.sticky-bottom-footer {
-	// Remove padding below footer.
-	padding-bottom: 0;
+  // Remove padding below footer.
+  padding-bottom: 0;
 }
 
 .container {
-	max-width: $max-content-width;
-}
-
-a.navbar-brand.title {
-	&:hover {
-		color: $theme-color;
-	}
+  max-width: $max-content-width;
 }
 
 // Profile
 .profile {
-	img {
-		width: 100%;
-	}
-}
-
-.profile-small {
-	.picture {
-		padding-top: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-	.infos{
-		padding-left: 5px;
-		padding-right: 5px;
-	}
+  img {
+    width: 100%;
+  }
 }
 
 .justify {
@@ -52,6 +44,7 @@ a.navbar-brand.title {
 
 #affiliation-img {
 	text-align: center;
+	padding: 30px 0px;
 	
 	.center {
 		display: inline-block;
@@ -71,14 +64,16 @@ a.navbar-brand.title {
 	#inria {
 		height: 50px;
 	}
-	#LIST {
+	#LIST,#LISTdark {
 		height: 80px;
 	}
 	#BLC {
 		height: 50px;
+    padding-right: 10px;
 	}
 	#BAF {
 		height: 50px;
+    padding-left: 10px;
 	}
 }
 
@@ -102,13 +97,10 @@ a.navbar-brand.title {
 				border-radius: 50% !important;
 			}
 		}
-		.infos{
-			padding-left: 15px;
-			padding-right: 15px;
-		}
 	}
 	#affiliation-img {
 		text-align: center;
+		padding: 25px 0px;
 		
 		.center {
 			display: inline-block;
@@ -128,39 +120,28 @@ a.navbar-brand.title {
 		#inria {
 			height: 40px;
 		}
-		#LIST {
+		#LIST,#LISTdark {
 			height: 75px;
 		}
 		#BLC {
 			height: 45px;
+			margin: 15px 0px;
+			padding: 0px;
 		}
 		#BAF {
 			height: 45px;
+      		padding: 0px;
 		}
 	}	
 }
 
-.news {
-	.news-small-date {
-		min-width: 61px;
-		vertical-align: middle;
-	}
-	.news-date {
-		min-width: 100px;
-		vertical-align: middle;
-	}
-	.inline-news {
-		vertical-align: middle;
-	}
-}
-
-
 // TODO: redefine content layout.
 
-
 /******************************************************************************
-* Publications
-******************************************************************************/
+ * Publications
+ ******************************************************************************/
+
+// TODO: redefine publications layout.
 div.publications {
 	&>div.row {
 		padding-right: 15px;
@@ -169,6 +150,7 @@ div.publications {
 		h2.year {
 			border-top: 1px solid lighten($grey-color, 20%);
 			color: lighten($grey-color, 20%);
+			text-align: right;
 		}
 	}
 	ol.bibliography {
@@ -211,7 +193,7 @@ div.publications {
 					.links {
 						a {
 							font-weight: bold;
-							color: darken($theme-color, 10%);
+							color: darken($cyan-color, 10%);
 						}
 					}
 				}
@@ -220,85 +202,31 @@ div.publications {
 	}
 }
 
-
-
-
-
-// TODO: redefine publications layout.
-
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.
-
-
-/*****************************************************************************
-* Blog
-*****************************************************************************/
-.distill {
-	d-byline .byline {
-		grid-template-columns: 2fr 2fr 1fr !important;
-	}
-
-	d-article > p {
-		text-align: justify;
-	}
-
-	d-title > .tags {
-		grid-column: text;
-	}
-}
-
-@media (max-width: 576px){
-	.header-bar {
-		font-size: 2.5rem !important;
-		padding-top: 1.5rem !important;
-  		padding-bottom: 2.5rem !important;
-	}
-}
-
-@media (max-width: 409px) {
-	.header-bar {
-		font-size: 2rem !important;
-		padding-top: 1rem !important;
-  		padding-bottom: 2rem !important;
-	}
-}
-
-.abbr {
-	height: 2rem;
-	margin-bottom: 0.5rem;
-	.badge {
-		display: inline-block;
-		background-color: $theme-color;
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-}
-
-
 /*****************************************************************************
 * Talks
 *****************************************************************************/
 
-.auto-resizable-iframe {
-	padding-top: 20px;
-	max-width: $max-content-width;
-	margin: 0px auto;
-}
+#talks {
+  .abbr {
+    margin-bottom: 0.5rem;
 
-.auto-resizable-iframe > div {
-	position: relative;
-	padding-bottom: 60%;
-	height: 0px;
-}
+    .badge {
+      display: inline-block;
+      background-color: var(--global-theme-color);
+      margin-bottom: 0.5rem;
 
-.auto-resizable-iframe iframe {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
+      a {
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .award {
+      color: var(--global-theme-color) !important;
+      border: 1px solid var(--global-theme-color);
+    }
+  }
 }

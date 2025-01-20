@@ -10,24 +10,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code 🛎️
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Setup Ruby !
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7.0'
-        bundler: '2.4.21'
-    - name: Enable bundler cache
-      uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-    - name: Install deps 🔧
-      run: |
-        gem install bundler -v 2.4.21
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
+        ruby-version: "3.3.5"
+        bundler-cache: true
+    - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
+    - name: Install and Build 🔧
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+    - name: Purge unused CSS 🧹
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
     - name: Setup deploy options 🔧
       id: setup
       run: |

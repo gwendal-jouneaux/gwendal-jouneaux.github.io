@@ -4,8 +4,10 @@ permalink: /talks/
 title: Talks
 description: List of my presentations with link to the slides
 nav: true
+nav_order: 3
 ---
 
+<div id="talks">
 {% assign sorted_talks = site.talks | sort: "date" %}
 {% for talk in sorted_talks reversed %}
 
@@ -19,3 +21,4 @@ nav: true
     </div>
 </div>
 {% endfor %}
+</div>
