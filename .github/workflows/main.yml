@@ -51,6 +51,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
+        branch: master
     # - name: Deploy website 🚀
     #   run:  bin/update --src ${{ steps.setup.outputs.SRC_BRANCH }} 
     #                 --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
