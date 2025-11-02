@@ -460,6 +460,11 @@ ninja.data = [{
           description: "PhD Defense",
           section: "Talks",handler: () => {
               window.location.href = "/talks/PhD-2024/";
+            },},{id: "talks-towards-sustainability-model-cards",
+          title: 'Towards Sustainability Model Cards',
+          description: "Presentation of the corresponding workshop paper",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/Green-AwareAI-2025/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
