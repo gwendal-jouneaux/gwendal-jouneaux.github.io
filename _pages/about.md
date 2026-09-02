@@ -35,14 +35,16 @@ During my thesis I worked on <a href="https://modeling-languages.com/towards-sel
     <a href="https://iutnantes.univ-nantes.fr/"  target="_blank">
       <img id="IUT" src="{{ 'IUT.png' | prepend: '/assets/img/' | relative_url }}">
     </a>
-    
+  </div>
+  <div class="center">
+    <a href="https://sciences-techniques.univ-nantes.fr/recherche-valorisation/umr-6004-laboratoire-des-sciences-du-numerique-de-nantes" target="_blank">
+      <img id="LS2N" class="only-light" src="{{ 'ls2n.webp' | prepend: '/assets/img/' | relative_url }}">
+      <img id="LS2Ndark" class="only-dark" src="{{ 'ls2n-dark.webp' | prepend: '/assets/img/' | relative_url }}">
+    </a>
   </div>
   <div class="center">
     <a href="https://naomod.github.io/" target="_blank">
       <img id="NaoMod" src="{{ 'NaoMod.png' | prepend: '/assets/img/' | relative_url }}">
-    </a>
-    <a href="https://sciences-techniques.univ-nantes.fr/recherche-valorisation/umr-6004-laboratoire-des-sciences-du-numerique-de-nantes" target="_blank">
-      <img id="LS2N" src="{{ 'ls2n.webp' | prepend: '/assets/img/' | relative_url }}">
     </a>
   </div>
 </div>

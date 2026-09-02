@@ -42,6 +42,10 @@ body.sticky-bottom-footer {
 	text-align: justify;
 }
 
+.more-info {
+	min-height: 150px;
+}
+
 #affiliation-img {
 	text-align: center;
 	padding: 30px 0px;
@@ -69,22 +73,22 @@ body.sticky-bottom-footer {
 	}
 	#BLC {
 		height: 50px;
-    padding-right: 10px;
+    	padding-right: 10px;
 	}
 	#BAF {
 		height: 50px;
-    padding-left: 10px;
+    	padding-left: 10px;
 	}
 	#IUT {
 		height: 80px;
 	}
-	#LS2N {
-		height: 50px;
-    padding-right: 10px;
+	#LS2N, #LS2Ndark {
+		height: 80px;
+    	padding-left: 10px;
 	}
 	#NaoMod {
-		height: 50px;
-    padding-left: 10px;
+		height: 80px;
+    	padding-left: 10px;
 	}
 }
 
@@ -115,6 +119,7 @@ body.sticky-bottom-footer {
 		
 		.center {
 			display: inline-block;
+			margin-top: 15px;
 		}
 		#diverse {
 			height: 35px;
