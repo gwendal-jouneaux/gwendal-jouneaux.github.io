@@ -209,7 +209,7 @@ div.publications {
 					.links {
 						a {
 							font-weight: bold;
-							color: darken($cyan-color, 10%);
+							color: darken(var(--global-main-color), 10%);
 						}
 					}
 				}
