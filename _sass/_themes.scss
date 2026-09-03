@@ -60,7 +60,11 @@
     display: block;
   }
 
-  .only-dark {
+  .only-light-inline {
+    display: inline;
+  }
+
+  .only-dark, .only-dark-inline {
     display: none;
   }
 
@@ -112,12 +116,16 @@ html[data-theme="dark"] {
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
 
-  .only-light {
+  .only-light, .only-light-inline {
     display: none;
   }
 
   .only-dark {
     display: block;
+  }
+
+  .only-dark-inline {
+    display: inline;
   }
 }
 
