@@ -9,8 +9,8 @@ profile:
   image: profil_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Associate Professor at <a href="https://www.list.lu/en/informatics/software-engineering-rdi-unit/" target="_blank">IUT de Nantes</a>,
-    Part of the <a href="https://www.list.lu/en/informatics/software-engineering-rdi-unit/" target="_blank">NaoMod</a> research team at <a href="https://www.list.lu/en/informatics/software-engineering-rdi-unit/" target="_blank">LS2N</a>.</p>
+    <p>Associate Professor at <a href="https://iutnantes.univ-nantes.fr/" target="_blank">IUT de Nantes</a>,
+    Part of the <a href="https://naomod.github.io/" target="_blank">NaoMod</a> research team at <a href="https://www.ls2n.fr" target="_blank">LS2N</a>.</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 <div class="justify">
 Since September 2026, I am an associate professor at the <a href="https://english.univ-nantes.fr/" target="_blank">University of Nantes</a>.
 I teach at the computer science department of <a href="https://iutnantes.univ-nantes.fr/" target="_blank">IUT de Nantes</a>.
-Research-wise, I joined the <a href="https://naomod.github.io/" target="_blank">NaoMod</a> team at <a href="https://sciences-techniques.univ-nantes.fr/recherche-valorisation/umr-6004-laboratoire-des-sciences-du-numerique-de-nantes" target="_blank">LS2N</a>.
+Research-wise, I joined the <a href="https://naomod.github.io/" target="_blank">NaoMod</a> team at <a href="https://www.ls2n.fr" target="_blank">LS2N</a>.
 
 Previously, I was a R&T Scientist (post-doctoral position) in Software Engineering at <a href="https://www.list.lu/" target="_blank">Luxembourg Institute of Science and Technology (LIST)</a>.
 I worked on the <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43108390/101189664/HORIZON" target="_blank">MOSAICO</a> project and participated in the development of both the BESSER <a href="https://github.com/BESSER-PEARL/BESSER" target="_blank">low-code platform</a> and <a href="https://github.com/BESSER-PEARL/BESSER-Agentic-Framework" target="_blank">agentic framework</a>.
